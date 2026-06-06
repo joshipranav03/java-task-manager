@@ -1,54 +1,38 @@
-# Student Task Manager
+# Java Task Manager
 
-A console-based task management app built in Java to help students track assignments, deadlines, and priorities.
+A command-line Task Manager application written in Java. Built to practice OOP principles, `ArrayList` manipulation, date parsing with `java.time.LocalDate`, and input validation.
 
 ## Features
-- Add tasks with title, description, due date, and priority (HIGH / MEDIUM / LOW)
+
+- Add tasks with a title, description, due date, and priority (HIGH / MEDIUM / LOW)
 - View all tasks sorted by due date
-- Filter pending tasks
+- Filter and display only pending tasks
 - Mark tasks as complete
-- Delete tasks
+- Delete tasks by number
 
 ## Tech Used
-- Java 17+
-- `ArrayList`, `Comparator`, `LocalDate`
-- OOP: encapsulation, classes, methods
+
+- **Language:** Java
+- **Concepts:** Object-Oriented Programming, `ArrayList`, `Comparator`, `LocalDate`, input validation, switch expressions
 
 ## How to Run
 
 ```bash
-# From the project root
-javac src/*.java
+cd src
+javac *.java
 java src.Main
 ```
 
 ## Project Structure
+
 ```
 java-task-manager/
-├── src/
-│   ├── Main.java         # Entry point
-│   ├── Task.java         # Task model (fields, getters, markComplete)
-│   └── TaskManager.java  # Menu logic, ArrayList operations, sorting
-└── README.md
+└── src/
+    ├── Main.java         # Entry point
+    ├── Task.java         # Task data model
+    └── TaskManager.java  # Core logic and menu
 ```
 
-## Example Output
-```
-==============================
-   Student Task Manager v1.0  
-==============================
-1. Add Task
-2. View All Tasks
-3. View Pending Tasks
-4. Mark Task Complete
-5. Delete Task
-6. Exit
-Choose:
-```
+## What I Learned
 
-## Concepts Practiced
-- Object-Oriented Programming
-- Collections (`ArrayList`)
-- Sorting with `Comparator`
-- Input validation and exception handling
-- Boolean flags for state management
+Practicing real-world OOP design — separating `Task` (data model) from `TaskManager` (logic/controller), handling user input safely with `try/catch`, and sorting objects with `Comparator.comparing()`.
