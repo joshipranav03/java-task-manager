@@ -1,4 +1,4 @@
-# Java Task Manager
+# Student Task Manager
 
 A command-line Task Manager application written in Java. Built to practice OOP principles, `ArrayList` manipulation, date parsing with `java.time.LocalDate`, and input validation.
 
